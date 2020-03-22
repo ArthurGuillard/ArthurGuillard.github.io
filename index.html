@@ -8,6 +8,20 @@
     </head>
     <body>
         <script type="application/javascript">
+            /*
+            <div class="paquetage">
+                <span role="img" aria-label={"petitPaquetage"}>🎒️</span>
+            </div>
+            <div>
+                <span  role="img" aria-label={"rouleboulle"}>🦊</span>
+            </div>
+             <div class="rouleboulle">
+                <span  role="img" aria-label={"rouleboulle"}>💏️</span>
+            </div>
+            <div>
+                <span  role="img" aria-label={"rouleboulle"}>🦄</span>
+            </div>
+             */
           const getChronometerMessage = () => {
             let dateNow = new Date();
             let sadMonday = new Date().setTime(1584401400000);
@@ -27,7 +41,6 @@
             const iMissYouNode = document.getElementById('iMissYouCounter');
             iMissYouNode.appendChild(document.createTextNode(getChronometerMessage()));
             setInterval(() => {
-              console.log('OK');
               iMissYouNode.innerHTML = "";
               iMissYouNode.appendChild(document.createTextNode(getChronometerMessage()));
             }, 1000);
