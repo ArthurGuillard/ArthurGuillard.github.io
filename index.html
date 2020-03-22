@@ -1,1 +1,53 @@
-HELLO
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>charlottejetaime.fr</title>
+        <link rel="stylesheet" type="text/css" href="charlotte.css">
+    </head>
+    <body>
+        <script type="application/javascript">
+          const getChronometerMessage = () => {
+            let dateNow = new Date();
+            let sadMonday = new Date().setTime(1584401400000);
+            let delta = Math.abs(dateNow - sadMonday) / 1000;
+            const days = Math.floor(delta / 86400);
+            delta -= days * 86400;
+            const hours = Math.floor(delta / 3600) % 24;
+            delta -= hours * 3600;
+            const minutes = Math.floor(delta / 60) % 60;
+            delta -= minutes * 60;
+            const seconds = delta % 60;
+
+            return `Cela fait ${days} jours, ${hours} heures, ${minutes} minutes et ${seconds.toFixed()} secondes que tu me manques`;
+          };
+
+          window.onload = () => {
+            const iMissYouNode = document.getElementById('iMissYouCounter');
+            iMissYouNode.appendChild(document.createTextNode(getChronometerMessage()));
+            setInterval(() => {
+              console.log('OK');
+              iMissYouNode.innerHTML = "";
+              iMissYouNode.appendChild(document.createTextNode(getChronometerMessage()));
+            }, 1000);
+          }
+        </script>
+        <div class="CharlotteMain">
+            <div class="CharlotteEmoji">
+                <span role="img" aria-label={"heart"}>❤️</span>
+            </div>
+            <div class="CharlotteMessage">
+                <h2>
+                    Je t'aime, laisse nous une chance
+                </h2>
+            </div>
+            <div id="iMissYouCounter" class="IMissYouCounter">
+            </div>
+            <div class="Pepinou">
+                <div class="SubPepinou">Ton Pépinou</div>
+                <div class="SubPepinou-2">ou Pépinos le boloss dans ce cas...<span role="img" aria-label={"sadArthur"}>😟 </span></div>
+            </div>
+        </div>
+    </body>
+</html>

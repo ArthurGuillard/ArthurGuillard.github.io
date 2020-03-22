@@ -1,0 +1,88 @@
+body {
+    height: 100%;
+    min-height : 100%;
+    width: 100%;
+    min-width: 100%;
+    background-color: #FFC5D0;
+}
+
+.CharlotteMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.CharlotteEmoji {
+    text-align: center;
+    font-size: 25vw;
+    animation: heartbeat 1s infinite;
+}
+
+.IMissYouCounter {
+    text-align: center;
+    font-size: 1.5em;
+    font-family: "Trebuchet MS", Helvetica, sans-serif
+}
+
+.Pepinou {
+    text-align: right;
+    vertical-align: text-bottom;
+    margin-right: 5vw;
+    font-size: 1.5em;
+    font-family: "Trebuchet MS", Helvetica, sans-serif
+}
+
+.SubPepinou {
+    font-size: 1.5em;
+    margin-bottom: 0
+}
+
+.SubPepinou-2 {
+    font-size: 1.5em;
+}
+
+.CharlotteMessage {
+    text-align: center;
+    font-size: 1.5em;
+    font-family: "Trebuchet MS", Helvetica, sans-serif
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes heartbeat
+{
+    0%
+    {
+        transform: scale( .75);
+    }
+
+    20%
+    {
+        transform: scale( 1);
+    }
+
+    40%
+    {
+        transform: scale( .75);
+    }
+
+    60%
+    {
+        transform: scale( 1);
+    }
+    80% {
+        transform: scale( .75);
+    }
+
+    100%
+    {
+        transform: scale( .75);
+    }
+}
