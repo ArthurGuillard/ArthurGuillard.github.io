@@ -15,7 +15,7 @@ body {
 .CharlotteEmoji {
     text-align: center;
     font-size: 25vw;
-    animation: heartbeat 1s infinite;
+    animation: shake 1s infinite;
 }
 
 .IMissYouCounter {
