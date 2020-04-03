@@ -1,59 +1,59 @@
-<!DOCTYPE html>
-<html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>charlottejetaime.fr</title>
-        <link rel="stylesheet" type="text/css" href="charlotte.css">
-    </head>
-    <body>
-        <script type="application/javascript">
-            /*
-                <span role="img" aria-label={"petitPaquetage"}>🎒️</span>
-                <span role="img" aria-label={"heart"}>❤️</span>
-                <span  role="img" aria-label={"licornotte"}>🦄</span>
-                <span  role="img" aria-label={"rouleboulle"}>💏️</span>
-                <span  role="img" aria-label={"renardo"}>🦊</span>
-             */
-          const getChronometerMessage = () => {
-            let dateNow = new Date();
-            let sadMonday = new Date().setTime(1584401400000);
-            let delta = Math.abs(dateNow - sadMonday) / 1000;
-            const days = Math.floor(delta / 86400);
-            delta -= days * 86400;
-            const hours = Math.floor(delta / 3600) % 24;
-            delta -= hours * 3600;
-            const minutes = Math.floor(delta / 60) % 60;
-            delta -= minutes * 60;
-            const seconds = delta % 60;
+<!--<!DOCTYPE html>-->
+<!--<html lang="fr">-->
+<!--    <head>-->
+<!--        <meta charset="utf-8">-->
+<!--        <meta name="viewport" content="width=device-width, initial-scale=1.0" />-->
+<!--        <title>charlottejetaime.fr</title>-->
+<!--        <link rel="stylesheet" type="text/css" href="charlotte.css">-->
+<!--    </head>-->
+<!--    <body>-->
+<!--        <script type="application/javascript">-->
+<!--            /*-->
+<!--                <span role="img" aria-label={"petitPaquetage"}>🎒️</span>-->
+<!--                <span role="img" aria-label={"heart"}>❤️</span>-->
+<!--                <span  role="img" aria-label={"licornotte"}>🦄</span>-->
+<!--                <span  role="img" aria-label={"rouleboulle"}>💏️</span>-->
+<!--                <span  role="img" aria-label={"renardo"}>🦊</span>-->
+<!--             */-->
+<!--          const getChronometerMessage = () => {-->
+<!--            let dateNow = new Date();-->
+<!--            let sadMonday = new Date().setTime(1584401400000);-->
+<!--            let delta = Math.abs(dateNow - sadMonday) / 1000;-->
+<!--            const days = Math.floor(delta / 86400);-->
+<!--            delta -= days * 86400;-->
+<!--            const hours = Math.floor(delta / 3600) % 24;-->
+<!--            delta -= hours * 3600;-->
+<!--            const minutes = Math.floor(delta / 60) % 60;-->
+<!--            delta -= minutes * 60;-->
+<!--            const seconds = delta % 60;-->
 
-            return `Cela fait ${days} jours, ${hours} heures, ${minutes} minutes et ${seconds.toFixed()} secondes que tu me manques`;
-          };
+<!--            return `Cela fait ${days} jours, ${hours} heures, ${minutes} minutes et ${seconds.toFixed()} secondes que tu me manques`;-->
+<!--          };-->
 
-          window.onload = () => {
-            const iMissYouNode = document.getElementById('iMissYouCounter');
-            iMissYouNode.appendChild(document.createTextNode(getChronometerMessage()));
-            setInterval(() => {
-              iMissYouNode.innerHTML = "";
-              iMissYouNode.appendChild(document.createTextNode(getChronometerMessage()));
-            }, 1000);
-          }
-        </script>
-        <div class="CharlotteMain">
-            <div class="CharlotteEmoji">
-                <span class="glow" role="img" aria-label={"licornotte"}>🦄</span>
-            </div>
-            <div class="CharlotteMessage">
-                <h2>
-                    Nous étions une start-up. Devenons une LICORNE!!! Je t'aime, parle moi...
-                </h2>
-            </div>
-            <div id="iMissYouCounter" class="IMissYouCounter">
-            </div>
-            <div class="Pepinou">
-                <div class="SubPepinou">Ton Pépinou</div>
-                <div class="SubPepinou-2">ou Pépinos le boloss dans ce cas...<span role="img" aria-label={"sadArthur"}>😟 </span></div>
-            </div>
-        </div>
-    </body>
-</html>
+<!--          window.onload = () => {-->
+<!--            const iMissYouNode = document.getElementById('iMissYouCounter');-->
+<!--            iMissYouNode.appendChild(document.createTextNode(getChronometerMessage()));-->
+<!--            setInterval(() => {-->
+<!--              iMissYouNode.innerHTML = "";-->
+<!--              iMissYouNode.appendChild(document.createTextNode(getChronometerMessage()));-->
+<!--            }, 1000);-->
+<!--          }-->
+<!--        </script>-->
+<!--        <div class="CharlotteMain">-->
+<!--            <div class="CharlotteEmoji">-->
+<!--                <span class="glow" role="img" aria-label={"licornotte"}>🦄</span>-->
+<!--            </div>-->
+<!--            <div class="CharlotteMessage">-->
+<!--                <h2>-->
+<!--                    Nous étions une start-up. Devenons une LICORNE!!! Je t'aime, parle moi...-->
+<!--                </h2>-->
+<!--            </div>-->
+<!--            <div id="iMissYouCounter" class="IMissYouCounter">-->
+<!--            </div>-->
+<!--            <div class="Pepinou">-->
+<!--                <div class="SubPepinou">Ton Pépinou</div>-->
+<!--                <div class="SubPepinou-2">ou Pépinos le boloss dans ce cas...<span role="img" aria-label={"sadArthur"}>😟 </span></div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </body>-->
+<!--</html>-->
