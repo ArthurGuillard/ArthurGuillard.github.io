@@ -15,7 +15,7 @@ body {
 .CharlotteEmoji {
     text-align: center;
     font-size: 25vw;
-    animation: shake 1s infinite;
+
 }
 
 .IMissYouCounter {
@@ -114,4 +114,15 @@ body {
     40%, 60% {
         transform: translate3d(4px, 0, 0);
     }
+}
+
+@keyframes glowing {
+    0% { box-shadow: 0 0 50px #c4a300; }
+    40% { box-shadow: 0 0 50px #c4a300; }
+    60% { box-shadow: 0 0 50px #c4a300; }
+    100% { box-shadow: 0 0 50px #c4a300; }
+}
+
+.glow {
+    animation: glowing 5000ms infinite;
 }
