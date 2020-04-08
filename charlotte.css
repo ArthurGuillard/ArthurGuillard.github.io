@@ -15,7 +15,6 @@ body {
 .CharlotteEmoji {
     text-align: center;
     font-size: 25vw;
-
 }
 
 .IMissYouCounter {
@@ -47,16 +46,17 @@ body {
     font-family: "Trebuchet MS", Helvetica, sans-serif
 }
 
-.rouleboulle {
-    animation: roule 3s infinite;
+.rouleboule {
+    display: inline-block;
+    -webkit-animation: rotation 5s infinite linear;
 }
 
-@keyframes roule {
+@-webkit-keyframes rotation {
     from {
-        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
     }
     to {
-        transform: rotate(360deg);
+        -webkit-transform: rotate(359deg);
     }
 }
 
